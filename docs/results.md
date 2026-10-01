@@ -18,7 +18,8 @@ so the model could memorise near-identical sequences. The next iterations switch
 ## Iteration 2: Meltome Atlas subset (2,335 proteins)
 
 Random Forest could not be trained on the full Meltome Atlas in reasonable time on CPU, so classical models
-were compared on a representative subset (`data/meltome_subset_2335.csv`, script `scripts/train_random_forest.py`).
+were compared on a representative subset (`data/meltome_subset_2335.csv`, script
+`scripts/meltome_subset/train_random_forest.py`).
 
 | Model          | MAE    | RMSE   | R²     | PCC    |
 |----------------|--------|--------|--------|--------|
@@ -31,7 +32,7 @@ were compared on a representative subset (`data/meltome_subset_2335.csv`, script
 ## Iteration 3: full Meltome Atlas wild-type set (20,000+ sequences)
 
 Sequences were fetched from the UniProt REST API, cleaned, embedded with ESM-2 (1,280 dimensions) and used to
-train neural networks in PyTorch on GPU.
+train neural networks in PyTorch on GPU. Code: `scripts/full_meltome/`.
 
 | Model | MAE  | MSE   | RMSE | R²   |
 |-------|------|-------|------|------|
