@@ -1,0 +1,9 @@
+# Dependencies for the scripts in scripts/ (the web app has its own app/requirements.txt)
+torch
+transformers
+pandas
+numpy
+scikit-learn
+scipy
+tqdm
+joblib
