@@ -13,7 +13,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
 # === Rutas ===
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 csv_path = ROOT / "data" / "meltome_subset_2335.csv"
 embedding_dir = ROOT / "embeddings"
 modelo_path = ROOT / "models" / "rf_model.pkl"

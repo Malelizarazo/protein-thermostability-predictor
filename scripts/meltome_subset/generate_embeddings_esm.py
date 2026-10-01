@@ -7,7 +7,7 @@ from tqdm import tqdm
 from transformers import EsmModel, EsmTokenizer
 
 # === CONFIGURACIÓN ===
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 csv_path = ROOT / "data" / "meltome_subset_2335.csv"  # debe tener columnas: Protein, sequence
 output_dir = ROOT / "embeddings"
 esm_model_name = "facebook/esm2_t33_650M_UR50D"  # puedes cambiarlo por otro ESM2

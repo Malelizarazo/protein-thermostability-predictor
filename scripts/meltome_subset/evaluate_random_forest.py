@@ -8,7 +8,7 @@ import pickle
 from pathlib import Path
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 # 1. Cargar el pipeline (scaler + RF) guardado por train_random_forest.py
 with open(ROOT / 'models' / 'rf_model.pkl', 'rb') as file:

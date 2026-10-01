@@ -7,3 +7,7 @@ scikit-learn
 scipy
 tqdm
 joblib
+h5py
+matplotlib
+seaborn
+pyarrow

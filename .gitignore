@@ -4,3 +4,7 @@ __pycache__/
 venv/
 embeddings/
 models/rf_model.pkl
+results/
+data/original.csv
+data/datos_limpios.csv
+data/log.txt
