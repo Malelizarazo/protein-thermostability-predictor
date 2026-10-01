@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protein Stability Predictor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h2>Protein Stability Predictor</h2>
+    <form method="post" action="/predict">
+        <label for="sequence">Enter Amino Acid Sequence:</label><br>
+        <textarea name="sequence" rows="6" cols="60">{{ sequence or '' }}</textarea><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if result is not none %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>

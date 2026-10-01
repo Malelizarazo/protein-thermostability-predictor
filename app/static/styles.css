@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f8f9fa;
+}
+textarea {
+    font-size: 14px;
+}
+input[type=submit] {
+    font-size: 16px;
+    padding: 6px 12px;
+}
